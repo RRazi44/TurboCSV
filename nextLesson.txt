@@ -1,4 +1,0 @@
-Note:
-    - 1
-        - Il est prévu de remplacer le type des paramètres "LineFormat" en une nouvelle classe "CSVLine"
-        - Utilisation par id de ligne (ligne = ligne du fichier + 1)
