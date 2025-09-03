@@ -1,0 +1,15 @@
+R:\dev\TurboCSV\TurboCSV\bin\Debug\net9.0\TurboCSV.exe
+R:\dev\TurboCSV\TurboCSV\bin\Debug\net9.0\TurboCSV.deps.json
+R:\dev\TurboCSV\TurboCSV\bin\Debug\net9.0\TurboCSV.runtimeconfig.json
+R:\dev\TurboCSV\TurboCSV\bin\Debug\net9.0\TurboCSV.dll
+R:\dev\TurboCSV\TurboCSV\bin\Debug\net9.0\TurboCSV.pdb
+R:\dev\TurboCSV\TurboCSV\obj\Debug\net9.0\TurboCSV.GeneratedMSBuildEditorConfig.editorconfig
+R:\dev\TurboCSV\TurboCSV\obj\Debug\net9.0\TurboCSV.AssemblyInfoInputs.cache
+R:\dev\TurboCSV\TurboCSV\obj\Debug\net9.0\TurboCSV.AssemblyInfo.cs
+R:\dev\TurboCSV\TurboCSV\obj\Debug\net9.0\TurboCSV.csproj.CoreCompileInputs.cache
+R:\dev\TurboCSV\TurboCSV\obj\Debug\net9.0\TurboCSV.sourcelink.json
+R:\dev\TurboCSV\TurboCSV\obj\Debug\net9.0\TurboCSV.dll
+R:\dev\TurboCSV\TurboCSV\obj\Debug\net9.0\refint\TurboCSV.dll
+R:\dev\TurboCSV\TurboCSV\obj\Debug\net9.0\TurboCSV.pdb
+R:\dev\TurboCSV\TurboCSV\obj\Debug\net9.0\TurboCSV.genruntimeconfig.cache
+R:\dev\TurboCSV\TurboCSV\obj\Debug\net9.0\ref\TurboCSV.dll
