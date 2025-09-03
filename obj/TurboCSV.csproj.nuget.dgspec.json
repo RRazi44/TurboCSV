@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "R:\\dev\\TurboCSV\\TurboCSV\\TurboCSV.csproj": {}
+    "D:\\place_sup\\LaForge\\C#\\Projects\\TurboCSV\\TurboCSV.csproj": {}
   },
   "projects": {
-    "R:\\dev\\TurboCSV\\TurboCSV\\TurboCSV.csproj": {
+    "D:\\place_sup\\LaForge\\C#\\Projects\\TurboCSV\\TurboCSV.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "R:\\dev\\TurboCSV\\TurboCSV\\TurboCSV.csproj",
+        "projectUniqueName": "D:\\place_sup\\LaForge\\C#\\Projects\\TurboCSV\\TurboCSV.csproj",
         "projectName": "TurboCSV",
-        "projectPath": "R:\\dev\\TurboCSV\\TurboCSV\\TurboCSV.csproj",
-        "packagesPath": "C:\\Users\\33635\\.nuget\\packages\\",
-        "outputPath": "R:\\dev\\TurboCSV\\TurboCSV\\obj\\",
+        "projectPath": "D:\\place_sup\\LaForge\\C#\\Projects\\TurboCSV\\TurboCSV.csproj",
+        "packagesPath": "C:\\Users\\king\\.nuget\\packages\\",
+        "outputPath": "D:\\place_sup\\LaForge\\C#\\Projects\\TurboCSV\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\33635\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\king\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -59,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
