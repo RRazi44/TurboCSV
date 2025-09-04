@@ -8,7 +8,6 @@ namespace Menu
     public static class MenuHandler
     {
         private static Settings param;
-        private static String USAGE = "turbocsv <csv>";
 
         //-------------------------------------|CONSTRUCTOR|-------------------------------------
 
@@ -31,21 +30,28 @@ namespace Menu
             while (run)
             {
                 Console.BackgroundColor = ConsoleColor.Blue;
-                Console.Write(">>> ");
+                Console.Write(">>>");
                 Console.ResetColor();
+                Console.Write(" ");
 
                 // équivalent  à if(answer == null) answer = "";
                 answer = Console.ReadLine() ?? "";
+                string[] anwserList = RemoveSpace(answer);
 
-                string[] anwserList = answer.Split(" ");
+                foreach (String arg in anwserList)
+                {
+                    Console.WriteLine(arg);
+                }
 
                 switch (anwserList[0])
                 {
                     case "test":
                         Console.WriteLine("test");
                         break;
+                    case "exit":
+                        return EXIT_CODE.SUCCESSFUL;
                     default:
-                        Console.WriteLine(getUsage());
+                        Console.WriteLine("");
                         break;
                 }
 
@@ -59,10 +65,31 @@ namespace Menu
             return "TODO";
         }
 
-        public static String getUsage()
+        public static string[] RemoveSpace(string answer)
         {
-            return USAGE;
+            string[] answerList = answer.Split(' ');
+
+            List<string> cleanList = new List<string>();
+            foreach (string answerElt in answerList)
+            {
+                bool onlySpace = true;
+                foreach (char letter in answerElt)
+                {
+                    if (letter != ' ')
+                    {
+                        onlySpace = false;
+                        break;
+                    }
+                }
+                if (!onlySpace)
+                {
+                    cleanList.Add(answerElt);
+                }
+            }
+
+            return cleanList.ToArray();
         }
+
 
     }
 }
