@@ -10,7 +10,9 @@ public class MainScript
     public static int Main()
     {
         Console.Beep();
+        Console.ForegroundColor = ConsoleColor.DarkYellow;
         Console.WriteLine("TurboCSV 0.0.1");
+        Console.ResetColor();
         Console.WriteLine("Type 'help' for more information. ");
 
         MenuHandler.RunMenu();    

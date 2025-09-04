@@ -30,19 +30,16 @@ namespace Menu
             string answer = "";
             while (run)
             {
+                Console.BackgroundColor = ConsoleColor.Blue;
                 Console.Write(">>> ");
+                Console.ResetColor();
+
                 // équivalent  à if(answer == null) answer = "";
                 answer = Console.ReadLine() ?? "";
 
                 string[] anwserList = answer.Split(" ");
 
-                if (!anwserList[0].ToLower().Equals("turbocsv"))
-                {
-                    Console.WriteLine(getUsage());
-                    return EXIT_CODE.ERROR;
-                }
-
-                switch (anwserList[1])
+                switch (anwserList[0])
                 {
                     case "test":
                         Console.WriteLine("test");

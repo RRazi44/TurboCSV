@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TurboCSV")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+777ac974bd35620edc34e15a06769285a4eb4341")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+01de65e13c903e5f6d747e7251ee428647ee647f")]
 [assembly: System.Reflection.AssemblyProductAttribute("TurboCSV")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TurboCSV")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
