@@ -36,20 +36,48 @@ namespace Menu
 
                 // équivalent  à if(answer == null) answer = "";
                 answer = Console.ReadLine() ?? "";
-                string[] anwserList = RemoveSpace(answer);
+                string[] args = RemoveSpace(answer);
 
-                foreach (String arg in anwserList)
+                foreach (String arg in args)
                 {
                     Console.WriteLine(arg);
                 }
 
-                switch (anwserList[0])
+                switch (args[0])
                 {
                     case "test":
                         Console.WriteLine("test");
                         break;
+                    case "file":
+                        if (args.Length != 2)
+                        {
+                            //WAITING FEAT/CSVFILE
+                        }
+                        break;
+                    case "create":
+                        // WAINTING FEAT/CSVFILE
+                        break;
                     case "exit":
                         return EXIT_CODE.SUCCESSFUL;
+                    case "path":
+                        if (args.Length == 1)
+                        {
+                            Console.WriteLine(getCurrentPath());
+                        }
+                        if (args.Length == 2)
+                        {
+                            if (args[1].ToLower().Equals("get"))
+                            {
+                                Console.WriteLine(getCurrentPath());
+                            }
+                        } if (args.Length == 3)
+                        {
+                            if (args[1].ToLower().Equals("set"))
+                            {
+                                // FEAT/CVSFile
+                            }
+                        }
+                        break;
                     default:
                         Console.WriteLine("");
                         break;
@@ -63,6 +91,11 @@ namespace Menu
         public static String getHelp()
         {
             return "TODO";
+        }
+
+        public static String getCurrentPath()
+        {
+            return MainScript.getCurrentFilePath();
         }
 
         public static string[] RemoveSpace(string answer)

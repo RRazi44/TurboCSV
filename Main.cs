@@ -1,10 +1,10 @@
-﻿using File;
+﻿using FileUtils;
 using Menu;
 using settings_handle;
 
 public class MainScript
 {
-    private CSVFile currentFile;
+    private static CSVFile currentFile;
     private Settings settings;
 
     public static int Main()
@@ -15,8 +15,19 @@ public class MainScript
         Console.ResetColor();
         Console.WriteLine("Type 'help' for more information. ");
 
-        MenuHandler.RunMenu();    
+        MenuHandler.RunMenu();
 
         return 0;
     }
+
+    public static string getCurrentFilePath()
+    {
+        return currentFile.currentPath;
+    }
+
+    public static void setCurrentFile(string path)
+    {
+        currentFile.currentPath = path;
+    }
+
 }
