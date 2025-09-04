@@ -1,17 +1,18 @@
 using settings_handle;
 using Defines;
-using System.ComponentModel;
 
 namespace Menu
 {
     using static EXIT_CODE;
-    public static class Menu
+
+    public static class MenuHandler
     {
         private static Settings param;
+        private static String USAGE = "turbocsv <csv>";
 
         //-------------------------------------|CONSTRUCTOR|-------------------------------------
 
-        static Menu()
+        static MenuHandler()
         {
             Option[] options = new Option[1]; //definition de la liste d'options
 
@@ -23,22 +24,48 @@ namespace Menu
             param = new Settings(options); //Definition du settings final
         }
 
-        static EXIT_CODE RunMenu()
+        public static EXIT_CODE RunMenu()
         {
             bool run = true;
-
+            string answer = "";
             while (run)
             {
-                string answer = "";
+                Console.Write(">>> ");
+                // équivalent  à if(answer == null) answer = "";
+                answer = Console.ReadLine() ?? "";
 
-                switch (answer)
+                string[] anwserList = answer.Split(" ");
+
+                if (!anwserList[0].ToLower().Equals("turbocsv"))
                 {
-                    default:
-                    return SUCCESSFUL;
+                    Console.WriteLine(getUsage());
+                    return EXIT_CODE.ERROR;
                 }
+
+                switch (anwserList[1])
+                {
+                    case "test":
+                        Console.WriteLine("test");
+                        break;
+                    default:
+                        Console.WriteLine(getUsage());
+                        break;
+                }
+
             }
 
-            return SUCCESSFUL;
+            return EXIT_CODE.SUCCESSFUL;
         }
+
+        public static String getHelp()
+        {
+            return "TODO";
+        }
+
+        public static String getUsage()
+        {
+            return USAGE;
+        }
+
     }
 }

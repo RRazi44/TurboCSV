@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "R:\\dev\\TurboCSV\\TurboCSV\\TurboCSV.csproj",
+      "projectUniqueName": "R:\\dev\\CSharp\\TurboCSV\\TurboCSV\\TurboCSV.csproj",
       "projectName": "TurboCSV",
-      "projectPath": "R:\\dev\\TurboCSV\\TurboCSV\\TurboCSV.csproj",
+      "projectPath": "R:\\dev\\CSharp\\TurboCSV\\TurboCSV\\TurboCSV.csproj",
       "packagesPath": "C:\\Users\\33635\\.nuget\\packages\\",
-      "outputPath": "R:\\dev\\TurboCSV\\TurboCSV\\obj\\",
+      "outputPath": "R:\\dev\\CSharp\\TurboCSV\\TurboCSV\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\33635\\AppData\\Roaming\\NuGet\\NuGet.Config"
